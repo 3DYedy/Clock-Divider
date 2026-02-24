@@ -2,7 +2,8 @@
 
 ## 1. Project Overview
 This project implements a synchronous frequency divider in **SystemVerilog**, designed to produce a stable square wave with a **50% duty cycle**
---
+
+
 ## 2. Design Architecture (RTL)
 The design follows a modular hierarchy integrated into a single `TOP` module for streamlined simulation.
 
@@ -14,7 +15,6 @@ The design follows a modular hierarchy integrated into a single `TOP` module for
 ### Reference Schematic
 <img width="982" height="398" alt="image" src="https://github.com/user-attachments/assets/98301d88-701f-426d-9aff-797d2abcee1a" />
 
---
 
 ## 3. Technical Enhancements & Optimization
 
@@ -22,7 +22,6 @@ The design follows a modular hierarchy integrated into a single `TOP` module for
 * **Enable Logic:** The signal from the comparator acts as a synchronous **Enable** for the T-FF, ensuring the output state changes only at the precise clock edge.
 * **Active-High OR Reset:** Implemented an OR-gate logic to combine the external manual reset with the internal auto-reset from the comparator.
 
---
 
 ## 4. Verification & Waveform Analysis
 
